@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Portefolio" content="width=device-width, initial-scale=1.0" />
+    <title>Portefolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="reseaux.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>
+        <span class="material-symbols-outlined" onclick="goToHome()">
+          home
+        </span>
+        Aymeric Cherbonnier
+      </h1>
+      <ul>
+        <li>
+          <a href="mailto:aymericcherbonnier.pro@gmail.com" class="no-decoration">
+            aymericcherbonnier.pro@gmail.com
+            <span class="material-symbols-outlined"> call_made </span>
+          </a>
+        </li>
+        <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
+      </ul>
+    </nav>
+    <div class="flex">
+      <div class="card">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+          <path
+            d="M12.819 14.427c.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12h.496c.474 0 .803.173.916.644zm3.091-8.65c2.047-.479 4.805.279 6.09 1.179-1.494-1.997-5.23-5.708-7.432-6.882 1.157 1.168 1.563 4.235 1.342 5.703zm-7.457 7.955h-.546v.943h.546c.235 0 .467-.027.576-.227.067-.123.067-.366 0-.489-.109-.198-.341-.227-.576-.227zm13.547-2.732v13h-20v-24h8.409c4.858 0 3.334 8 3.334 8 3.011-.745 8.257-.42 8.257 3zm-12.108 2.761c-.16-.484-.606-.761-1.224-.761h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.094-.292.094-.597 0-.885zm3.407-.303c-.297-.299-.711-.458-1.199-.458h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.554-.659.586-2.035-.063-2.693zm3.701-.458h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784z"
+          />
+        </svg>
+        <div class="card-details">
+          <p class="text-title">CV</p>
+          <p class="text-body">Retrouvez mon CV ci-dessous</p>
+        </div>
+        <button id="openPdf" class="card-button" type="button">Voir</button>
+      </div>
+
+      <div class="card">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+          <path
+            d="M16 18c0 1.104-.896 2-2 2h-12c-1.105 0-2-.896-2-2v-12c0-1.104.895-2 2-2h12c1.104 0 2 .896 2 2v12zm8-14l-6 6.223v3.554l6 6.223v-16z"
+          />
+        </svg>
+        <div class="card-details">
+          <p class="text-title">CV Vidéo</p>
+          <p class="text-body">Retrouvez mon CV Vidéo ci-dessous</p>
+        </div>
+        <button id="openVideo" class="card-button" type="button">Voir</button>
+      </div>
+
+      <div class="card">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+          <path
+            d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z"
+          />
+        </svg>
+        <div class="card-details">
+          <p class="text-title">Gmail</p>
+          <p class="text-body">Retrouvez mon mail ci-dessous</p>
+        </div>
+        <button
+          class="card-button"
+          type="button"
+          onclick="window.location.href='mailto:aymericcherbonnier.pro@gmail.com?subject=Objet%20du%20mail&body=Bonjour%2C%0A%0A'"
+        >
+          Voir
+        </button>
+      </div>
+
+      <div class="card">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+          />
+        </svg>
+        <div class="card-details">
+          <p class="text-title">Linkedin</p>
+          <p class="text-body">Retrouvez mon Linkedin ci-dessous</p>
+        </div>
+        <button
+          class="card-button"
+          type="button"
+          onclick="window.open('https://www.linkedin.com/in/aymeric-cherbonnier-3a85302b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')"
+        >
+          Voir
+        </button>
+      </div>
+
+      <div class="card">
+        <svg width="50" height="50" viewBox="0 0 24 24">
+          <path
+            d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"
+          />
+        </svg>
+        <div class="card-details">
+          <p class="text-title">Youtube</p>
+          <p class="text-body">Retrouvez mon Youtube ci-dessous</p>
+        </div>
+        <button
+          class="card-button"
+          type="button"
+          onclick="window.open('https://www.youtube.com/@scorp3591', '_blank')"
+        >
+          Voir
+        </button>
+      </div>
+    </div>
+    <footer>
+      <h3>
+        <span class="material-symbols-outlined"> star </span>
+        Aymeric Cherbonnier
+      </h3>
+      <p>&copy; Aymeric Cherbonnier 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
