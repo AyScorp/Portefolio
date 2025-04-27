@@ -8,7 +8,7 @@
   --box-shadow-color: rgba(0, 0, 0, 0.3);
   --box-shadow-light: 0px 0px 30px -10px var(--box-shadow-color);
   --box-shadow-hover: 0px 0px 40px -5px var(--box-shadow-color);
-  --signature-image: url("images/signature.png");
+  --signature-image: url("/assets/images/signature.png");
 }
 
 body {

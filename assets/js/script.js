@@ -28,7 +28,7 @@ function changeDarkMode() {
     document.documentElement.style.setProperty("--background-colorwrapper", "rgb(50,50,50)");
     document.documentElement.style.setProperty("--background-color-icon", "rgb(100,100,100)");
     document.documentElement.style.setProperty("--box-shadow-color", "rgba(255, 255, 255, 0.4)");
-    document.documentElement.style.setProperty("--signature-image", "url(images/signature.svg)");
+    document.documentElement.style.setProperty("--signature-image", "url(../images/signature.svg)");
     document.documentElement.style.setProperty("--savoir-image", "url('images/savoirEtreBlack.png')");
     document.documentElement.style.setProperty("--pointFort-image", "url('images/PointFortBlack.png')");
 
