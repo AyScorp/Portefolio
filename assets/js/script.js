@@ -1,7 +1,7 @@
 let darkMode = false;
 
 document.getElementById('openPdf').addEventListener('click', function() {
-  window.open('https://aym-cher-web.onrender.com//Documents/CV.pdf', '_blank');
+  window.open('https://aym-cher-web.onrender.com/assets/Documents/CV.pdf', '_blank');
 });
 
 document.getElementById('openVideo').addEventListener('click', function() {
