@@ -1,0 +1,31 @@
+:root {
+    --background-colorwrapper: #AEA89D;
+    --background-color-icon: #747069;
+    --background-color: #e8dfd1;
+    --text-color: black;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --box-shadow-light: 0px 0px 30px -10px var(--box-shadow-color);
+    --box-shadow-hover: 0px 0px 40px -5px var(--box-shadow-color);}
+
+    .pinterest-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px; /* Espacement entre les éléments */
+        padding: 20px;
+    }
+    
+    .pinterest-grid img,
+    .pinterest-grid .responsive-video {
+        max-width: 400px; /* Réduire la largeur maximale */
+        margin: 0 auto; /* Centrer les éléments */
+        display: block;
+        border-radius: 15px; /* Bordures arrondies */
+        box-shadow: var(--box-shadow-light); /* Ombre douce */
+        padding: 10px; /* Espacement intérieur */
+    }
+    
+    video {
+        width: 100%; /* Adapter la largeur à celle du conteneur */
+        height: auto; /* Conserver le ratio d'aspect */
+        border-radius: 15px; /* Bordures arrondies */
+    }
