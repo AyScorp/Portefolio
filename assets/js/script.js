@@ -5,7 +5,7 @@ document.getElementById('openPdf').addEventListener('click', function() {
 });
 
 document.getElementById('openVideo').addEventListener('click', function() {
-  window.open('https://perso.univ-lemans.fr/~i2301203/Documents/CV.mp4', '_blank');
+  window.open('https://aym-cher-web.onrender.com/assets/Documents/CVvideo.mp4', '_blank');
 });
 
 function changeDarkMode() {
